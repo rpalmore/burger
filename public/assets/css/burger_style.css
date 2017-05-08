@@ -1,0 +1,115 @@
+.main {
+	margin: auto;
+	width: 400px;
+}
+
+h1, p {
+	text-align: center;
+}
+
+h1 {
+	position: relative;
+    color: rgba(0, 0, 0, .3);
+    color: #f0ceaf;
+    font-weight: bold;
+}
+
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 90%;
+    white-space: nowrap;
+    color: #ffffff;
+    color: #d0361f;
+    color: #333333;
+/*    color: #e89a6a;
+*/    font-weight: bold;
+    animation: loading 5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+
+p {
+	font-size: 17px;
+}
+
+img {
+	width: 320px;
+	display: block;
+	margin: auto;
+}
+
+/* PLACE ORDER BUTTON */
+#order {
+	display: block;
+	margin: auto;
+	width: 180px;
+	height: 30px;
+	background-color: #d0361f;
+	color: #f1e318;
+	font-size: 17px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* INPUT BURGER TYPE */
+input {
+	display: block;
+	margin: auto;
+	width: 290px;
+	height: 65px;
+	padding: 10px;
+	background-color: #efefef;
+	font-size: 22px;
+}
+
+.line {
+	width: 220px;
+	display: block;
+	margin: auto;
+	border-bottom: 5px solid #63c537;
+}
+
+.burger_orders {
+	width: 300px;
+	position: relative;
+	right: 100px;
+	margin-bottom: 20px;
+}
+
+.devour {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: -4px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 5px solid #e89867;
+  background-color: #93d775;
+  margin-top: -21px;
+  
+}
+
+.burger {
+	position: relative;
+	width: 270px;
+	height: 60px;
+    background-color: #f7d6bc;
+    margin-bottom: 10px;
+    padding: 10px;
+	border: 1px solid #f0b28c;
+	border-bottom: 5px solid #e89867;
+	
+}
+
+.order {
+	width: 196px;
+	display: inline-block;
+}
