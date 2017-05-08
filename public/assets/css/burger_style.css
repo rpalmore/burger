@@ -45,14 +45,6 @@ img {
 	width: 400px;
 }
 
-/*CONTAINS LEFT AND RIGHT COLUMNS*/
-/*.burger_data {
-	width: 600px;
-	position: relative;
-	right: 100px;
-	margin-bottom: 20px;
-}*/
-
 .both {
 	margin: auto;
 	width: 600px;
@@ -61,7 +53,6 @@ img {
 .burger_left {
 	width: 300px;
 	position: relative;
-	/*right: 100px;*/
 	margin-bottom: 20px;
 	display: inline-block;
 }
@@ -69,7 +60,6 @@ img {
 .burger_right {
 	width: 300px;
 	position: relative;
-	/*right: 100px;*/
 	float: right;
 	margin-bottom: 20px;
 	display: inline-block;
@@ -93,7 +83,6 @@ img {
 /*BURGER CONTAINER, INCLUDES NAME AND BUTTON*/
 .burger {
 	position: relative;
-	/*display: inline-block;*/
 	width: 270px;
 	height: 60px;
     background-color: #f7d6bc;
@@ -101,16 +90,10 @@ img {
     padding: 10px;
 	border: 1px solid #f0b28c;
 	border-bottom: 5px solid #e89867;
-	/*box-sizing: border-box;*/
 }
 
 /*RIGHT COLUMN: DEVOURED BURGERS*/
 .devoured {
-    /*position: relative;
-    float: right;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 5px;*/
     display: inline-block;
     width: 270px;
     height: 60px;
@@ -119,7 +102,6 @@ img {
     padding: 10px;
     border: 1px solid #f0b28c;
     border-bottom: 5px solid #e89867;
-    /*box-sizing: border-box;*/
 }
 
 
@@ -137,7 +119,9 @@ input {
 	height: 65px;
 	padding: 10px;
 	background-color: #efefef;
-	font-size: 22px;
+	font-size: 19px;
+	text-align: center;
+	border: 3px solid #f1e318;
 }
 
 /* PLACE ORDER BUTTON */

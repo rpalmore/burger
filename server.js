@@ -1,7 +1,3 @@
-// Require the following npm packages inside of the server.js file:
-// express X
-// method-override X
-// body-parser X
 
 var express = require("express");
 var bodyParser = require("body-parser");
