@@ -1,8 +1,4 @@
-.main {
-	margin: auto;
-	width: 400px;
-}
-
+/*NAME OF WEBSITE, LOADING TEXT*/
 h1, p {
 	text-align: center;
 }
@@ -23,8 +19,7 @@ h1:before {
     color: #ffffff;
     color: #d0361f;
     color: #333333;
-/*    color: #e89a6a;
-*/    font-weight: bold;
+    font-weight: bold;
     animation: loading 5s infinite;
 }
 
@@ -44,45 +39,43 @@ img {
 	margin: auto;
 }
 
-/* PLACE ORDER BUTTON */
-#order {
-	display: block;
+/*MAIN CONTAINER*/
+.main {
 	margin: auto;
-	width: 180px;
-	height: 30px;
-	background-color: #d0361f;
-	color: #f1e318;
-	font-size: 17px;
-	margin-top: 10px;
-	margin-right: auto;
-	margin-left: auto;
+	width: 400px;
 }
 
-/* INPUT BURGER TYPE */
-input {
-	display: block;
-	margin: auto;
-	width: 290px;
-	height: 65px;
-	padding: 10px;
-	background-color: #efefef;
-	font-size: 22px;
-}
-
-.line {
-	width: 220px;
-	display: block;
-	margin: auto;
-	border-bottom: 5px solid #63c537;
-}
-
-.burger_orders {
-	width: 300px;
+/*CONTAINS LEFT AND RIGHT COLUMNS*/
+/*.burger_data {
+	width: 600px;
 	position: relative;
 	right: 100px;
 	margin-bottom: 20px;
+}*/
+
+.both {
+	margin: auto;
+	width: 600px;
 }
 
+.burger_left {
+	width: 300px;
+	position: relative;
+	/*right: 100px;*/
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.burger_right {
+	width: 300px;
+	position: relative;
+	/*right: 100px;*/
+	float: right;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+/*DEVOUR IT BUTTON*/
 .devour {
   display: inline-block;
   position: absolute;
@@ -97,8 +90,10 @@ input {
   
 }
 
+/*BURGER CONTAINER, INCLUDES NAME AND BUTTON*/
 .burger {
 	position: relative;
+	/*display: inline-block;*/
 	width: 270px;
 	height: 60px;
     background-color: #f7d6bc;
@@ -106,10 +101,62 @@ input {
     padding: 10px;
 	border: 1px solid #f0b28c;
 	border-bottom: 5px solid #e89867;
-	
+	/*box-sizing: border-box;*/
 }
 
+/*RIGHT COLUMN: DEVOURED BURGERS*/
+.devoured {
+    /*position: relative;
+    float: right;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 5px;*/
+    display: inline-block;
+    width: 270px;
+    height: 60px;
+    background-color: #f7d6bc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #f0b28c;
+    border-bottom: 5px solid #e89867;
+    /*box-sizing: border-box;*/
+}
+
+
+/*NAME OF ORDERED BURGER*/
 .order {
 	width: 196px;
 	display: inline-block;
+}
+
+/* INPUT BURGER TYPE */
+input {
+	display: block;
+	margin: auto;
+	width: 290px;
+	height: 65px;
+	padding: 10px;
+	background-color: #efefef;
+	font-size: 22px;
+}
+
+/* PLACE ORDER BUTTON */
+#order {
+	display: block;
+	margin: auto;
+	width: 180px;
+	height: 30px;
+	background-color: #d0361f;
+	color: #f1e318;
+	font-size: 17px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.line {
+	width: 220px;
+	display: block;
+	margin: auto;
+	border-bottom: 5px solid #63c537;
 }
