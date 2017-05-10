@@ -28,9 +28,7 @@ router.post("/", function(request, result) {
 
 router.put("/:id", function(request, result) {
   var condition = "id = " + request.params.id;
-
   console.log("condition", condition);
-
   burger.update({
     devoured: request.body.devoured
   }, condition, function() {

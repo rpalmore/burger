@@ -80,8 +80,23 @@ img {
   
 }
 
+/*ORDER IT AGAIN BUTTON*/
+.order-again {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: -4px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 5px solid #dd6465;
+  background-color: #ecb086;
+  margin-top: -21px;
+  
+}
+
 /*BURGER CONTAINER, INCLUDES NAME AND BUTTON*/
-.burger {
+.burger, .devoured-burgers {
 	position: relative;
 	width: 270px;
 	height: 60px;
@@ -93,17 +108,10 @@ img {
 }
 
 /*RIGHT COLUMN: DEVOURED BURGERS*/
-.devoured {
-    display: inline-block;
-    width: 270px;
-    height: 60px;
-    background-color: #f7d6bc;
-    margin-bottom: 10px;
-    padding: 10px;
+.devoured-burgers {
     border: 1px solid #f0b28c;
-    border-bottom: 5px solid #e89867;
+    border-bottom: 5px solid #dd6465;
 }
-
 
 /*NAME OF ORDERED BURGER*/
 .order {

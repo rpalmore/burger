@@ -1,23 +1,20 @@
-// Create the code that will call the ORM functions using burger specific input for the ORM.
-
 // Import the ORM 
 var orm = require("../config/orm.js");
 
 var burger = {
-  all: function(cb) {
+  all: function(callback) {
     orm.all("burgers", function(result) {
-      cb(result);
+      callback(result);
     });
   },
-  // The variables cols and vals are arrays.
-  create: function(cols, vals, cb) {
+  create: function(cols, vals, callback) {
     orm.create("burgers", cols, vals, function(result) {
-      cb(result);
+      callback(result);
     });
   },
-  update: function(objColVals, condition, cb) {
+  update: function(objColVals, condition, callback) {
     orm.update("burgers", objColVals, condition, function(result) {
-      cb(result);
+      callback(result);
     });
   }
 };

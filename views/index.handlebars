@@ -27,12 +27,16 @@
   <div class="burger_right">
   {{#each burgers}}
     {{#if this.devoured}}
-    <div class="burger">
+    <div class="devoured-burgers">
+    <div class="order">
     {{this.id}}
         {{this.burger_name}}
         <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="true">
+          <input type="hidden" name="devoured" value="false">
+          <button type="submit" class="order-again">Order it!</button>
+          </form>
        </form>
+    </div>
     </div>
     {{/if}}
   {{/each}}
