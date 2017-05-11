@@ -1,3 +1,20 @@
+body {
+	font-family: 'Pavanam', sans-serif;
+}
+
+.header {
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #e89867;
+	margin-bottom: 10px;
+	background-color: #efefef;
+	font-family: 'Pavanam', sans-serif;
+	line-height: 40px;
+	padding-left: 20px;
+}
+
+
+
 /*NAME OF WEBSITE, LOADING TEXT*/
 h1, p {
 	text-align: center;
@@ -137,6 +154,7 @@ input {
 	margin: auto;
 	width: 180px;
 	height: 30px;
+	padding-top: 3px;
 	background-color: #d0361f;
 	color: #f1e318;
 	font-size: 17px;
