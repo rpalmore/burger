@@ -43,7 +43,6 @@ a:link {
 /*NAME OF WEBSITE, LOADING TEXT*/
 h1, p {
 	text-align: center;
-	font-family: 'Tauri', sans-serif;
 }
 
 h1 {
@@ -51,6 +50,8 @@ h1 {
     color: rgba(0, 0, 0, .3);
     color: #f0ceaf;
     font-weight: bold;
+    font-family: 'Tauri', sans-serif;
+
 }
 
 h1:before {
@@ -184,7 +185,7 @@ input {
 	background-color: #d0361f;
 	color: #f1e318;
 	font-size: 17px;
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-right: auto;
 	margin-left: auto;
 }
