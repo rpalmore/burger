@@ -1,27 +1,35 @@
 <div class="header">
+
   <div id="name">
-    <a href="https://thawing-journey-23840.herokuapp.com/" target="_blank">Rebecca Palmore</a>
+    <a href="https://thawing-journey-23840.herokuapp.com/" target="_blank">
+      Rebecca Palmore
+    </a>
   </div>
   <div class="links">
-    <a href="https://thawing-journey-23840.herokuapp.com/" target="_blank">About</a>
+    <a href="https://thawing-journey-23840.herokuapp.com/" target="_blank">
+      About
+    </a>
   </div>
-    <div class="links">
-    <a href="https://thawing-journey-23840.herokuapp.com/portfolio.html" target="_blank">Portfolio</a>
-    </div>
-    <div class="links">
-   <a href="https://thawing-journey-23840.herokuapp.com/contact.html" target="_blank">Contact</a>
+  <div class="links">
+    <a href="https://thawing-journey-23840.herokuapp.com/portfolio.html" target="_blank">
+      Portfolio
+    </a>
   </div>
-</div>
-</div>
+  <div class="links">
+    <a href="https://thawing-journey-23840.herokuapp.com/contact.html" target="_blank">   Contact
+    </a>
+  </div>
 </div>
 
 <div class="main">
 
-  <img src="http://www.publicdomainpictures.net/pictures/110000/velka/burger.jpg" alt="Burger illustration (prawny/pixabay"/>
+  <img src="../assets/img/burger.jpg" alt="Burger illustration (prawny/pixabay"/>
 
   <h1 data-text="Eat-Da-Veggie-Burger!">Eat-Da-Veggie-Burger!</h1>
 </div>
+
 <div class="both">
+
   <div class="burger_left">
   {{#each burgers}}
     {{#unless this.devoured}}
@@ -32,7 +40,9 @@
       <div>
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
-          <button type="submit" class="devour">Devour it!</button>
+          <button type="submit" class="devour">
+            Devour it!
+          </button>
         </form>
       </div>
     </div>
@@ -44,15 +54,16 @@
   {{#each burgers}}
     {{#if this.devoured}}
     <div class="devoured-burgers">
-    <div class="order">
-    {{this.id}}
+      <div class="order">
+        {{this.id}}
         {{this.burger_name}}
-        <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="false">
-          <button type="submit" class="order-again">Order it!</button>
+          <form action="/{{this.id}}?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
           </form>
-       </form>
-    </div>
+      </div>
     </div>
     {{/if}}
   {{/each}}
@@ -60,17 +71,18 @@
 </div>
 
 <div class="main">
+
   <form class="create-update-form" action="/" method="POST">
-
-  <div class="form-group">
-  <input type="text" id="ca" name="name" placeholder="Your dream veggie burger">
-  </div>
-
-
-  <button type="submit" id="order">Place Order</button>
+    <div class="form-group">
+      <input type="text" id="ca" name="name" placeholder="Your dream veggie burger" required/>
+    </div>
+    <button type="submit" id="order">
+      Place Order
+    </button>
   </form>
 
   <p>Hungry? Type in the name of the veggie burger you want to eat, then place your order.</p>
+  
   <div class="line"></div>
 
 </div>

@@ -2,6 +2,7 @@ body {
 	font-family: 'Pavanam', sans-serif;
 }
 
+/*HORIZONTAL NAVIGATION*/
 .header {
 	width: 100%;
 	height: 40px;
@@ -23,7 +24,6 @@ body {
 	display: inline-block;
 	padding-right: 10px;
 	padding-left: 10px;
-
 }
 
 
@@ -40,7 +40,14 @@ a:link {
 	background-color: #f1e215;
 }
 
-/*NAME OF WEBSITE, LOADING TEXT*/
+/*VEGGIE BURGER HERO*/
+img {
+	width: 375px;
+	display: block;
+	margin: auto;
+}
+
+/*VEGGIE BURGER LOADING TEXT*/
 h1, p {
 	text-align: center;
 }
@@ -51,7 +58,6 @@ h1 {
     color: #f0ceaf;
     font-weight: bold;
     font-family: 'Tauri', sans-serif;
-
 }
 
 h1:before {
@@ -77,18 +83,13 @@ p {
 	font-size: 17px;
 }
 
-img {
-	width: 375px;
-	display: block;
-	margin: auto;
-}
-
 /*MAIN CONTAINER*/
 .main {
 	margin: auto;
 	width: 400px;
 }
 
+/*BURGER DIVS*/
 .both {
 	margin: auto;
 	width: 600px;
@@ -190,6 +191,7 @@ input {
 	margin-left: auto;
 }
 
+/*HORIZONTAL RULE*/
 .line {
 	width: 220px;
 	display: block;
